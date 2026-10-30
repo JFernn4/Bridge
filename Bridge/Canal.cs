@@ -8,6 +8,10 @@ namespace Bridge
 {
     public interface ICanal
     {
-        void Enviar(string destinatario, string mensaje);
+        void recibirMsg(string destinatario, string mensaje);
+        void enviarMsg(string destinatario, string mensaje);
+        
+        // NUEVO MÉTODO OBLIGATORIO EN LA INTERFAZ
+        bool verificarDisponibilidad(); 
     }
 }
